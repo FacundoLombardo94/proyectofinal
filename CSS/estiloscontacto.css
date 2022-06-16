@@ -1,0 +1,74 @@
+@font-face {
+  font-family: musicalina;
+  src: url("../fonts/musicalina/musicalina.ttf");
+}
+
+body {
+  min-height: 100vh;
+  font-size: 25px;
+  font-family: "Barlow Condensed", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: #008f7a;
+}
+
+header {
+  margin: 0px;
+  background-color: #ff9671;
+  height: 190px;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 50px;
+  font-family: "musicalina";
+  color: azure;
+  margin-top: 0px;
+  margin-right: 50px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+}
+
+nav {
+  width: fit-content;
+  margin: 0px;
+}
+
+nav ul {
+  margin-top: 0px;
+}
+
+nav ul li {
+  color: blue;
+}
+
+nav ul li a {
+  font-style: oblique;
+  color: azure;
+  font-size: 18px;
+}
+
+form {
+    margin-top: 40px;
+}
+
+
+form fieldset {
+}
+
+fieldset legend {
+  font-size: 30px;
+  color: azure;
+}
+
+form fieldset label {
+  font-size: 16px;
+  color: aquamarine;
+}
+
+footer {
+    margin-left: 15px;
+    color: azure;
+}

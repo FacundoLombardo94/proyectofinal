@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/estiloscontacto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../Img/favicon.ico" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <h1>Music World</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./biblioteca.html">Biblioteca</a></li>
+          <li><a href="./Proyectos.html">Proyectos</a></li>
+          <li><a href="./Monitoreo.html">Monitoreo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form
+      action="Contacto.html"
+      method="get"
+      enctype="application/x-www-form-urlencoded"
+    >
+      <fieldset>
+        <legend>Ayúdanos a mejorar</legend>
+        <label for="Nombre">Nombre</label>
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Ingresa tu nombre aquí"
+          id=""
+        />
+        <label for="Apellido">apellido</label>
+        <input
+          type="text"
+          name="Apellido"
+          placeholder="Ingresa tu apellido aquí"
+          id=""
+        />
+        <div>
+          <label for="Sexo">Sexo</label><br />
+          <input type="radio" name="sexo" id="hombre" value="hombre" />
+          <label for="hombre">hombre</label>
+          <input type="radio" name="sexo" id="mujer" value="mujer" />
+          <label for="mujer">mujer</label>
+        </div>
+
+        <div>
+          <label for="comentarios">Comentarios</label><br />
+          <textarea
+            name="comentarios"
+            id="comentarios"
+            rows="10"
+            cols="65"
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="instrumento">instrumento</label>
+          <select name="instrumento">
+            <option value="">guitarra</option>
+            <option value="">piano</option>
+            <option value="">violin</option>
+            <option value="">bateria</option>
+            <option value="">voz</option>
+          </select>
+        </div>
+        <div>
+          <input type="submit" value="Enviar formulario" />
+          <input type="reset" value="resetear formulario" />
+        </div>
+      </fieldset>
+    </form>
+    <footer>
+      <span style="font-size: 11px"
+        >Copyright &copy; - Music World &reg; Colaboraciones</span
+      >
+      <div style="margin-top: 10px">
+        <span>
+          <i class="fab fa-facebook"></i>
+        </span>
+        <span>
+          <i class="fab fa-twitter"></i>
+        </span>
+        <span>
+          <i class="fab fa-instagram"></i>
+        </span>
+        <span>
+          <i class="fab fa-linkedin"></i>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
