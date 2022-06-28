@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=League+Gothic&family=Roboto:wght@300;400;700;900&family=Smooch&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+
+.navbar {
+  background-image: linear-gradient(#0b0450, #3482a1);
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+
+.navbar .logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 2em;
+  grid-column: 2 / 3;
+}
+
+.navbar .menu {
+  font-size: 1.8em;
+  grid-column: 3 / 8;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar .menu li {
+  list-style: none;
+}
+
+.navbar .menu a {
+  font-family: "League Gothic", sans-serif;
+  text-decoration: none;
+  color: #0b0450;
+  cursor: pointer;
+}
+
+.navbar .menu a:hover {
+  color: #fff;
+}
+
+.navbar .crear-proyecto {
+  grid-column: 9 / 12;
+  font-family: "League Gothic", sans-serif;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.navbar .crear-proyecto .fa-solid {
+  color: #0b0450;
+  display: none;
+}
+
+.navbar .crear-proyecto h3 {
+  color: #0b0450;
+  font-weight: 100;
+}
+
+.navbar .crear-proyecto h3:hover {
+  color: #fff;
+}
+
+.navbar .crear-proyecto .fa-solid:hover {
+  color: #fff;
+}
+
+/* MAIN SECTION */
+
+.hero {
+  height: 80vh;
+  background-image: linear-gradient(
+      rgba(16, 10, 73, 0.3),
+      rgba(16, 10, 73, 0.6)
+    ),
+    url(/Desafios/Img/muchacha-hermosa-pensativa-con-maquillaje-artístico-brillante-mujer-colorido-creativo-que-muerde-sus-clavos-fondo-blanco-el-141101539.jpg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  overflow: hidden;
+}
+
+.hero .info {
+  grid-column: 2 / 7;
+  grid-row: 2 / 7;
+}
+
+.hero .info h3 {
+  color: #0b0450;
+  font-family: "Smooch", cursive;
+  font-size: 2em;
+}
+
+.hero .info h1 {
+  color: #fff;
+  font-family: "Smooch", cursive;
+  font-size: 3em;
+}
+
+.hero .info p {
+  font-family: "Smooch", cursive;
+  font-size: 2em;
+  color: #0b0450;
+}
+
+.hero .btn {
+  font-size: 0.7em;
+  background: none;
+  padding: 8px 10px;
+  color: #fff;
+  border: solid 1px #fff;
+  border-radius: 20px;
+}
+
+.hero .btn:hover {
+  color: #0b0450;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer {
+  display: grid;
+  height: 80px;
+  align-items: center;
+  background-image: linear-gradient(#0b0450 10%, #3482a1 100%);
+  color: #0b0450;
+  grid-template-areas: "listen-online follow-me social-networks";
+  font-family: "League Gothic", sans-serif;
+}
+
+.footer .listen-online {
+  grid-template-areas: listen-online;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.footer .listen-online h2:hover {
+  color: #fff;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.footer .listen-online .fa-solid {
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+
+.footer .follow-me {
+  grid-template-areas: follow-me;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.footer .follow-me h2 {
+  margin-left: 40px;
+  font-weight: 200;
+}
+
+.footer .follow-me h2:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer .social-networks {
+  grid-template-areas: social-networks;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  margin-right: 50px;
+}
+
+.footer .social-networks .fa-brands {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.footer .social-networks .fa-brands:hover {
+  color: #fff;
+}
