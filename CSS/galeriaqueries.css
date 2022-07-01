@@ -1,0 +1,92 @@
+/*HEADER*/
+
+@media only screen and (max-width: 768px) {
+  .navbar .menu {
+    font-size: 1.7em;
+  }
+
+  .navbar .crear-proyecto {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .navbar .logo {
+    display: none;
+  }
+
+  .navbar .menu {
+    font-size: 1.5em;
+    grid-column: 2 / 8;
+  }
+
+  .navbar .crear-proyecto {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .navbar .menu {
+    font-size: 1.3em;
+    grid-column: 2 / 8;
+  }
+
+  .navbar .crear-proyecto h3 {
+    display: none;
+  }
+
+  .navbar .crear-proyecto .fa-solid {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .navbar .logo {
+    display: none;
+  }
+
+  .navbar .menu {
+    font-size: 1.2em;
+    grid-column: 2 / 8;
+  }
+
+  .navbar .crear-proyecto {
+    font-size: 1.2em;
+  }
+
+  .navbar .crear-proyecto h3 {
+    display: none;
+  }
+
+  .navbar .crear-proyecto .fa-solid {
+    display: block;
+  }
+}
+
+/*FOOTER*/
+
+@media only screen and (max-width: 320px) {
+  .footer .listen-online h2 {
+    display: none;
+  }
+
+  .footer .listen-online .fa-solid {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+
+  .footer .listen-online .fa-solid:hover {
+    color: #fff;
+  }
+
+  .footer .follow-me h2 {
+    margin-top: -25px;
+    font-size: 1.1em;
+    margin-right: 20px;
+  }
+
+  .footer .social-networks .fa-brands {
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+}
