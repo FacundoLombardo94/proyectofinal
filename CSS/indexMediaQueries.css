@@ -1,180 +1,105 @@
 /*HEADER*/
 
-@media only screen and (max-width: 768px) {
-  .navbar .menu {
-    font-size: 1.7em;
+@media only screen and (max-width: 992px) {
+    #name {
+      width: 100px;
+      font-size: 13px;
+      margin-right: 3px;
+    }
+  
+    #password {
+      width: 100px;
+      font-size: 13px;
+    }
+  
+    .btn {
+      width: 40px;
+      font-size: 14px;
+      margin-left: 3px;
+    }
   }
-
-  .navbar .crear-proyecto {
-    font-size: 1.4em;
+  
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    nav ul li a {
+      font-size: 1.5em;
+    }
+  
+    .btn {
+      width: 30px;
+      margin-top: -28px;
+    }
   }
-}
-
-@media only screen and (max-width: 550px) {
-  .navbar .logo {
-    display: none;
+  
+  @media only screen and (max-width: 576px) {
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    nav ul li a {
+      font-size: 1.4em;
+    }
+  
+    #password {
+      width: 70px;
+      font-size: 12px;
+    }
+  
+    #name {
+      width: 70px;
+      font-size: 12px;
+      margin-left: 1px;
+    }
+  
+    .btn {
+      width: 30px;
+      margin-top: -28px;
+      font-size: 12px;
+      padding-top: 2px;
+    }
+  
+    .formulario {
+      margin-left: 2px;
+    }
+  
+    #truco {
+      display: none;
+    }
   }
-
-  .navbar .menu {
-    font-size: 1.5em;
-    grid-column: 2 / 8;
+  
+  @media only screen and (max-width: 438px) {
+    .Titulo-peq {
+      display: block;
+      font-size: 2.8em;
+    }
+  
+    nav ul li a {
+      font-size: 1.3em;
+    }
+  
+    #password {
+      width: 60px;
+      font-size: 11px;
+    }
+  
+    #name {
+      width: 60px;
+      font-size: 11px;
+      margin-left: 0px;
+    }
+  
+    .btn {
+      width: 25px;
+      margin-top: -25px;
+      margin-left: -2px;
+      font-size: 11px;
+      padding-top: 4px;
+    }
+  
+    h1 {
+      display: none;
+    }
   }
-
-  .navbar .crear-proyecto {
-    font-size: 1.2em;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  .navbar .menu {
-    font-size: 1.3em;
-    grid-column: 2 / 8;
-  }
-
-  .navbar .crear-proyecto h3 {
-    display: none;
-  }
-
-  .navbar .crear-proyecto .fa-solid {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .navbar .logo {
-    display: none;
-  }
-
-  .navbar .menu {
-    font-size: 1.2em;
-    grid-column: 2 / 8;
-  }
-
-  .navbar .crear-proyecto {
-    font-size: 1.2em;
-  }
-
-  .navbar .crear-proyecto h3 {
-    display: none;
-  }
-
-  .navbar .crear-proyecto .fa-solid {
-    display: block;
-  }
-}
-
-/*SECTION MAIN*/
-
-@media only screen and (max-width: 1100px) {
-  .hero .info {
-    grid-column: 2 / 8;
-    grid-row: 2 / 10;
-  }
-
-  .hero .info h3 {
-    font-size: 2em;
-  }
-
-  .hero .info h1 {
-    font-size: 3em;
-  }
-
-  .hero .info p {
-    font-size: 1.8em;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .hero .info {
-    grid-column: 2 / 10;
-    grid-row: 2 / 10;
-  }
-
-  .hero .info h3 {
-    font-size: 2em;
-  }
-
-  .hero .info h1 {
-    font-size: 3em;
-  }
-
-  .hero .info p {
-    font-size: 1.7em;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .hero .info {
-    grid-column: 2 / 10;
-    grid-row: 2 / 10;
-  }
-
-  .hero .info h3 {
-    font-size: 2em;
-  }
-
-  .hero .info h1 {
-    font-size: 3em;
-  }
-
-  .hero .info p {
-    font-size: 1.6em;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .hero .info p {
-    font-size: 1.4em;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .hero .info {
-    grid-column: 2 / 9;
-    grid-row: 1 / 9;
-  }
-
-  .hero .info h3 {
-    font-size: 1.5em;
-  }
-
-  .hero .info h1 {
-    font-size: 2.5em;
-  }
-
-  .hero .info p {
-    font-size: 1.4em;
-  }
-
-  .hero .btn {
-    margin-top: 15px;
-  }
-}
-
-/*FOOTER*/
-
-@media only screen and (max-width: 320px) {
-  .footer .listen-online h2 {
-    display: none;
-  }
-
-  .footer .listen-online .fa-solid {
-    font-size: 2em;
-    margin-bottom: 30px;
-  }
-
-  .footer .listen-online .fa-solid:hover {
-    color: #fff;
-  }
-
-  .footer .follow-me h2 {
-    margin-top: -25px;
-    font-size: 1.1em;
-    margin-right: 20px;
-  }
-
-  .footer .social-networks .fa-brands {
-    margin-right: 10px;
-    margin-bottom: 20px;
-  }
-}
