@@ -1,100 +1,309 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  @font-face {
-    font-family: oeste;
-    src: url(../fonts/bleeding_cowboys/Bleeding_Cowboys.ttf);
-  }
-  
-  @font-face {
-    font-family: Race;
-    src: url(../fonts/racing_catalogue/Racing\ Catalogue.ttf);
-  }
-  
-  @font-face {
-    font-family: oswald;
-    src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
-  }
-  
-  .bg-red {
-    background-color: red;
-  }
-  
-  .text-white {
-    color: white;
-  }
-  
-  h1 {
-    font-family: "oeste";
-    font-size: 2em;
-    padding: 10 15;
-  }
-  
-  .Titulo-peq {
-    display: none;
-  }
-  
-  #logo {
-    border-right: 1px solid white;
-  }
-  
-  #nav {
-    margin: 0;
-  }
-  
-  nav ul li {
-    list-style: none;
-  }
-  
-  nav ul li a {
-    font-size: 2.5em;
-    font-family: race;
-    color: white;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: none;
-  }
-  
-  #name {
-    width: 120px;
-    height: 20px;
-    border-radius: 10px;
-    text-align: center;
-    border: 1px solid white;
-    font-family: oswald;
-    font-size: 14px;
-    margin-right: 10px;
-  }
-  
-  #password {
-    width: 120px;
-    height: 20px;
-    border-radius: 10px;
-    text-align: center;
-    border: 1px solid white;
-    font-family: oswald;
-    font-size: 14px;
-  }
-  
-  .btn {
-    background-color: white;
-    width: 50px;
-    height: 20px;
-    padding: 0;
-    margin-bottom: 4px;
-    margin-left: 5px;
-    padding-bottom: 23px;
-    border: 1px solid white;
-    text-align: center;
-    font-family: oswald;
-    font-size: 15px;
-    border-radius: 10px;
-  }
-  
-  #form-container {
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: oeste;
+  src: url(../fonts/bleeding_cowboys/Bleeding_Cowboys.ttf);
+}
+
+@font-face {
+  font-family: Race;
+  src: url(../fonts/racing_catalogue/Racing\ Catalogue.ttf);
+}
+
+@font-face {
+  font-family: oswald;
+  src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Noticiero;
+  src: url(../fonts/Bitter/Bitter-Italic-VariableFont_wght.ttf);
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  width: auto;
+}
+
+/*HEADER*/
+
+.bg-red {
+  background-color: red;
+}
+
+.text-white {
+  color: white;
+}
+
+h1 {
+  font-family: "oeste";
+  font-size: 2em;
+  padding: 10 15;
+}
+
+.Titulo-peq {
+  display: none;
+}
+
+#logo {
+  border-right: 1px solid white;
+}
+
+#nav {
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 2.5em;
+  font-family: race;
+  color: white;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+}
+
+#name {
+  width: 120px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid white;
+  font-family: oswald;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+#password {
+  width: 120px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid white;
+  font-family: oswald;
+  font-size: 14px;
+}
+
+.btn {
+  background-color: white;
+  width: 50px;
+  height: 20px;
+  padding: 0;
+  margin-bottom: 4px;
+  margin-left: 5px;
+  padding-bottom: 23px;
+  border: 1px solid white;
+  text-align: center;
+  font-family: oswald;
+  font-size: 15px;
+  border-radius: 10px;
+  color: red;
+}
+
+.btn:hover {
+  color: #007bff;
+}
+
+#form-container {
+  padding: 0;
+}
+
+/*MAIN SECTION*/
+
+#wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.intro {
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-right: 1px solid red;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+#titulo-principal {
+  width: 300px;
+  font-size: 3.5em;
+  margin-top: 30px;
+  color: red;
+  box-shadow: 10px 10px 10px 5px rgba(218, 13, 13, 0.5);
+}
+
+.intro h2 {
+  font-size: 2.8em;
+  font-family: race;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 1em;
+  font-family: oswald;
+  width: 500px;
+}
+
+.btn-rdm {
+  width: 150px;
+  border: 1px solid red;
+  margin-top: 25px;
+  border-radius: 20px;
+}
+
+.btn-rdm a {
+  font-size: 0.8em;
+  font-family: oeste;
+  color: red;
+  text-decoration: none;
+}
+
+.btn-rdm:hover {
+  background-color: red;
+}
+
+.btn-rdm:hover a {
+  color: white;
+}
+
+/*TARJETAS*/
+
+.tarjetas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 10px;
+  margin-top: 35px;
+}
+
+/*ANIMACIÓN*/
+
+.card {
+  position: relative;
+  width: 550px;
+  height: 140px;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0px 5px 10px #000;
+}
+
+.card .front .img-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  font-family: race;
+  font-size: 2.5em;
+  margin: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  padding: 15px;
+  color: white;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0px 5px 10px #000;
+}
+
+.card .back h3 {
+  font-size: 2.5em;
+  font-family: race;
+  letter-spacing: 1px;
+}
+
+.card .back p {
+  font-family: oswald;
+  font-size: 0.9em;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+/*FOOTER*/
+
+.footer {
+  display: grid;
+  grid-template-areas: "net-works legal";
+  width: auto;
+  height: 35px;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.net-works {
+  grid-area: net-works;
+  color: white;
+}
+
+.legal {
+  grid-area: legal;
+}
+
+.legal a {
+  color: white;
+  font-family: oswald;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.legal a:hover {
+  color: #007bff;
+}
+
+.fa-google:hover {
+  color: #007bff;
+}
+
+.fa-cloud-arrow-up:hover {
+  color: #007bff;
+}

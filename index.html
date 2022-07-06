@@ -10,6 +10,10 @@
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./CSS/index.css" />
     <link rel="stylesheet" href="./CSS/indexMediaQueries.css" />
+    <script
+      src="https://kit.fontawesome.com/fbef94b629.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="header" class="container-fluid bg-red">
@@ -24,8 +28,8 @@
         <div id="nav" class="col-6 col-md-6 col-lg-5 col-xl-6">
           <nav class="mt-3">
             <ul class="d-flex justify-content-between">
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Stories</a></li>
+              <li><a href="#">Me</a></li>
+              <li><a href="./pages/galeria.html">Galery</a></li>
               <li><a href="#">Comunity</a></li>
               <li id="truco"><a href="#">about us</a></li>
             </ul>
@@ -50,10 +54,81 @@
               name="contraseña"
             />
 
-            <button class="btn">login</button>
+            <button class="btn">Login</button>
           </form>
         </div>
       </div>
     </header>
+    <div id="wrapper">
+      <section class="intro">
+        <h1 id="titulo-principal">It's Me</h1>
+        <h2>¿Que somos?</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          sagittis ultricies justo, vel elementum urna. Aenean sed iaculis
+          mauris. Sed hendrerit nulla vel eros varius, rutrum rutrum nisl
+          dignissim. Donec pellentesque bibendum vulputate. Pellentesque quis
+          varius purus. Donec blandit lacinia ligula, non accumsan dui maximus
+          tempor. Quisque dignissim vestibulum enim, vel sagittis nisl feugiat
+          id. Nunc ultrices vestibulum augue, sed elementum orci vulputate at.
+          Aliquam orci erat, semper in quam eget, tincidunt volutpat ante.
+        </p>
+        <button class="btn-rdm"><a id="a-leer" href="#">Read more</a></button>
+      </section>
+      <section class="tarjetas">
+        <div class="card">
+          <div class="face front">
+            <img class="img-1" src="./Img/me.webp" alt="" />
+            <h3>¿Quién eres?</h3>
+          </div>
+          <div class="face back">
+            <h3>Me</h3>
+            <p>
+              En nuestra sección "Me", podrás mostrarle quién eres al mundo.
+            Contarás con una basta gama de personalizaciones para tu perfil
+            público, así como con 'rewards' en base a las visualizaciones del
+            mismo.
+            </p>
+          </div>
+      </div>
+        <div class="card">
+          <div class="face front">
+            <img class="img-1" src="./Img/gente-conociendose.jpg" alt="" />
+            <h3>Conoce gente</h3>
+          </div>
+          <div class="face back">
+            <h3>Comunity</h3>
+            <p>
+              En nuestra sección "comunity", podrás conocer gente de distintos
+              países e idiomas , y contaras con multiples acciones posibles las
+              cuales creceran en base a la cantidad de interacciones.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="face front">
+            <img class="img-1" src="./Img/galerias.webp" alt="" />
+            <h3>Tu obra de arte</h3>
+          </div>
+          <div class="face back">
+            <h3>Galery</h3>
+            <p>
+              En nuestra sección "Galery", podrás crear una galeria totalmente
+            personalizada con tus fotos y videos preferidos, así como visitar o
+            recomendar galerias con tus 'amigos.
+            </p>
+          </div>
+
+          
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="net-works">
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+      </div>
+      <div class="legal"><a href="#">www.itsme.com/legal</a></div>
+    </footer>
   </body>
 </html>
