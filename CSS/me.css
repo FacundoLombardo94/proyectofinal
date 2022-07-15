@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: oeste;
+  src: url(../fonts/bleeding_cowboys/Bleeding_Cowboys.ttf);
+}
+
+@font-face {
+  font-family: Race;
+  src: url(../fonts/racing_catalogue/Racing\ Catalogue.ttf);
+}
+
+@font-face {
+  font-family: oswald;
+  src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Noticiero;
+  src: url(../fonts/Bitter/Bitter-Italic-VariableFont_wght.ttf);
+}
+
+body {
+  min-height: 100vh;
+  width: auto;
+}
+
+/*HEADER*/
+
+.bg-red {
+  background-color: red;
+}
+
+.text-white {
+  color: white;
+}
+
+h1 {
+  font-family: "oeste";
+  font-size: 2em;
+  padding: 10 15;
+}
+
+.Titulo-peq {
+  display: none;
+}
+
+#logo {
+  border-right: 1px solid white;
+}
+
+#nav {
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 2.5em;
+  font-family: race;
+  color: white;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+}
+
+#name {
+  width: 120px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid white;
+  font-family: oswald;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+#password {
+  width: 120px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid white;
+  font-family: oswald;
+  font-size: 14px;
+}
+
+.btn {
+  background-color: white;
+  width: 50px;
+  height: 20px;
+  padding: 0;
+  margin-bottom: 4px;
+  margin-left: 5px;
+  padding-bottom: 23px;
+  border: 1px solid white;
+  text-align: center;
+  font-family: oswald;
+  font-size: 15px;
+  border-radius: 10px;
+  color: red;
+}
+
+.btn:hover {
+  color: #007bff;
+}
+
+#form-container {
+  padding: 0;
+}
+
+/*FOOTER*/
+
+.footer {
+  display: grid;
+  grid-template-areas: "net-works legal";
+  width: auto;
+  height: 35px;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.net-works {
+  grid-area: net-works;
+  color: white;
+}
+
+.legal {
+  grid-area: legal;
+}
+
+.legal a {
+  color: white;
+  font-family: oswald;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.legal a:hover {
+  color: #007bff;
+}
+
+.fa-google:hover {
+  color: #007bff;
+}
+
+.fa-cloud-arrow-up:hover {
+  color: #007bff;
+}

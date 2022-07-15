@@ -1,0 +1,47 @@
+#container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 80vh;
+  width: auto;
+
+  .card-container {
+    width: auto;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  h4 {
+    font-family: race;
+    margin-top: 25px;
+    font-size: 2em;
+    color: red;
+    box-shadow: 10px 10px 10px 5px rgba(218, 13, 13, 0.5);
+  }
+
+  p {
+    font-size: 0.9em;
+    font-family: oswald;
+    margin-top: 18px;
+  }
+
+  img {
+    object-fit: cover;
+    width: 185px;
+    height: 150px;
+    border: 1px solid red;
+  }
+
+  .elemento-1 {
+    border-right: 1px solid red;
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+  .elemento-2 {
+    display: grid;
+  }
+}
